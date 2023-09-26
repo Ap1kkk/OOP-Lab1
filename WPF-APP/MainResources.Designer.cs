@@ -61,7 +61,7 @@ namespace WPF_APP {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на See you later,.
+        ///   Ищет локализованную строку, похожую на See you later, .
         /// </summary>
         internal static string FarewellMessagePlaceholder {
             get {
@@ -70,7 +70,7 @@ namespace WPF_APP {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на You are welcome,.
+        ///   Ищет локализованную строку, похожую на You are welcome, .
         /// </summary>
         internal static string WelcomeMessagePlaceholder {
             get {

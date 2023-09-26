@@ -118,9 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="FarewellMessagePlaceholder" xml:space="preserve">
-    <value>See you later,</value>
+    <value>See you later, </value>
   </data>
   <data name="WelcomeMessagePlaceholder" xml:space="preserve">
-    <value>You are welcome,</value>
+    <value>You are welcome, </value>
   </data>
 </root>
