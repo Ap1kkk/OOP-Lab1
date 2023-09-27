@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_APP"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" Closed="OnWindowClosed">
+        Title="MainWindow" Height="450" Width="800" Closed="OnWindowClosed" Loaded="Window_Loaded" SizeChanged="Window_SizeChanged1">
     <Grid>
         <Label x:Name="MainLabel" Content="Main label" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="756" Height="359" FontSize="30"/>
 

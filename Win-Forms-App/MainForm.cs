@@ -19,12 +19,27 @@ namespace Win_Forms_App
         public MainForm()
         {
             InitializeComponent();
-            MainLabel.Text = MainResources.WelcomeMessagePlaceholder + _username;
+            UpdateLabelText();
+        }
+        
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            MessageBox.Show(MainResources.WelcomeMessagePlaceholder + _username);
         }
 
         private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             MessageBox.Show(MainResources.FarewellMesssagePlaceholder + _username);
+        }
+
+        private void MainForm_Resize(object sender, EventArgs e)
+        {
+            UpdateLabelText();
+        }
+
+        private void UpdateLabelText()
+        {
+            MainLabel.Text = Size.ToString();
         }
     }
 }

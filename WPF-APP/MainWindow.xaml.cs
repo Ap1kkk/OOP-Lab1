@@ -25,12 +25,24 @@ namespace WPF_APP
         public MainWindow()
         {
             InitializeComponent();
-            MainLabel.Content = MainResources.WelcomeMessagePlaceholder + _username;
+            UpdateLabelText();
+        }
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show(MainResources.WelcomeMessagePlaceholder + _username);
         }
 
         private void OnWindowClosed(object sender, EventArgs e)
         {
             MessageBox.Show(MainResources.FarewellMessagePlaceholder + _username);
+        }
+        private void Window_SizeChanged1(object sender, SizeChangedEventArgs e)
+        {
+            UpdateLabelText();
+        }
+        private void UpdateLabelText()
+        {
+            MainLabel.Content = $"width: {Width} height: {Height}";
         }
     }
 }
